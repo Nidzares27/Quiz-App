@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameplay</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <div class="gameContainer">
+        <div>
+          <p id="redniBrPitanja"></p>
+          <div class="w3-container">
+            <div class="w3-light-grey">
+              <div
+                id="myBar"
+                class="w3-green"
+                style="height: 24px; width: 0"
+              ></div>
+            </div>
+            <br />
+          </div>
+        </div>
+        <div id="contentKviza">
+          <p id="questn"></p>
+
+          <form id="qAndA" action="results.html" method="get">
+            <div id="skelet"></div>
+            <div>
+              <input type="submit" value="Submit" id="nextQuestBtn" />
+              <a id="b2HP" class="dgme hidden" href="index.html"
+                >Back to Home Page</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
